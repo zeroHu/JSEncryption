@@ -3,7 +3,7 @@ import JsEncrypt from 'jsencrypt';
 import { parseBigInt } from 'jsencrypt/lib/lib/jsbn/jsbn';
 
 const encryptJS = new JsEncrypt();
-const AES_IV = 'e3ki*******53m';
+const AES_IV = 'e3ki*******53m'; // TODO change
 /**
  * 生成随机字符串
  * @param {*} len 需要的随机字符串的长度

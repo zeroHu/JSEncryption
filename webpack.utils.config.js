@@ -1,5 +1,8 @@
+/**
+ * 执行本文件方式： npx webpack --config webpack.utils.config.js
+ * 本文件主要是将utils.js 打包为 sjfwUtils.min.js
+ */
 const path = require('path');
-
 module.exports = {
   mode: 'production', // 或者 'development'，取决于你的需求
   entry: './utils.js',

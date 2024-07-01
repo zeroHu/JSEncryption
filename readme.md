@@ -53,6 +53,9 @@ import {
 全局变量使用用法示例
 
 ```
-window.NowTimestamp()
-window.RandomString()
+<script src="./sjfwUtils.min.js"></script>
+<script>
+  window.NowTimestamp()
+  window.RandomString()
+</script>
 ```

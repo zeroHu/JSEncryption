@@ -1,10 +1,10 @@
 ### 前端演示项目
 
 frontDemo - 前端演示项目
-  index.html
-  index.js
-  index.bundle.js
-  sjfwUtils.min.js
+index.html
+index.js
+index.bundle.js
+sjfwUtils.min.js
 utilsBuild - utils 打包的成果文件夹
 utils.js - 工具函数
 webpack.config.js - frontDemo 的 打包文件
@@ -47,15 +47,32 @@ import {
   RSAPublicDecrypted,
   AESEncrypted,
   AESDecrypted,
-} from './sjfwUtils.min.js';
+} from './sjfwUtils.umd.min.js';
 ```
 
 全局变量使用用法示例
 
 ```
-<script src="./sjfwUtils.min.js"></script>
+<script src="./sjfwUtils.umd.min.js"></script>
 <script>
   window.NowTimestamp()
   window.RandomString()
 </script>
+```
+
+esm 用法
+
+```
+<script type="module">
+import {
+  NowTimestamp,
+  RandomString,
+  MD5Encrypted,
+  RSAEncrypted,
+  RSAPublicDecrypted,
+  AESEncrypted,
+  AESDecrypted,
+} from './sjfwUtils.es.min.js';
+</script>
+
 ```
